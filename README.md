@@ -1,3 +1,23 @@
+# terraform-eks
+
+A full EKS cluster based on [eks-getting-started](https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html). This particular make use of a .tfvars file to customise the cluster capacity scaling the number of availability zones, size and number of workers nodes.
+
+e.g demo.tfvars
+
+```
+cluster_name = "demo"
+
+region = "us-west-2"
+
+instance_type = "t3.micro"
+
+desired_capacity = 2
+
+az_count = "2"
+
+cidr_block = "10.0.0.0/16"
+
+```  
 
 **What is Kubernetes?**
 
