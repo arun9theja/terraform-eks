@@ -126,8 +126,8 @@ resource "aws_launch_configuration" "demo" {
 resource "aws_autoscaling_group" "demo" {
   desired_capacity     = "${var.desired_capacity}"
   launch_configuration = "${aws_launch_configuration.demo.id}"
-  max_size             = 3
-  min_size             = 1
+  max_size             = "${var.max_size}"
+  min_size             = "${var.min_size}"
   name                 = "terraform-eks-demo"
   vpc_zone_identifier  = ["${aws_subnet.demo.*.id}"]
 

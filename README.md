@@ -1,6 +1,8 @@
 # terraform-eks
 
-A full EKS cluster based on [eks-getting-started](https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html). This seupt make use of a .tfvars file to customise the cluster capacity scaling the number of availability zones, size and number of workers nodes.
+
+A full EKS cluster based on [eks-getting-started](https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html). This setup make use of a .tfvars file to customise the cluster capacity scaling the number of availability zones, size and number of workers nodes.
+
 
 e.g demo.tfvars
 
@@ -58,13 +60,13 @@ git clone git@github.com:p0bailey/terraform-eks.git
 
 2) `export KUBECONFIG=.kube/eksconfig`
 
-4) `terraform init -var-file="demo.tfvars"`
+3) `terraform init -var-file="demo.tfvars"`
 
-5) `terraform plan -var-file="demo.tfvars"`
+4) `terraform plan -var-file="demo.tfvars"`
 
-6) `terraform apply -var-file="demo.tfvars"`
+5) `terraform apply -var-file="demo.tfvars"`
 
-7) `terraform output kubeconfig > .kube/eksconfig`
+6) `terraform output kubeconfig > .kube/eksconfig`
 
 
 ```
@@ -85,6 +87,8 @@ configmap/aws-auth created
 ```
 
 10) `aws-vault exec stack42-phillip-admin -- kubectl get nodes`
+
+Then you must see the nodes in Ready status.
 
 ```
 ip-10-0-0-244.us-west-2.compute.internal   Ready    <none>   54s   v1.10.3
