@@ -1,6 +1,6 @@
 # terraform-eks
 
-A full EKS cluster based on [eks-getting-started](https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html). This particular make use of a .tfvars file to customise the cluster capacity scaling the number of availability zones, size and number of workers nodes.
+A full EKS cluster based on [eks-getting-started](https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html). This seupt make use of a .tfvars file to customise the cluster capacity scaling the number of availability zones, size and number of workers nodes.
 
 e.g demo.tfvars
 
