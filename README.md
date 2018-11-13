@@ -54,17 +54,17 @@ git clone git@github.com:p0bailey/terraform-eks.git
 
 **Quickstart:**
 
-1) mkdir .kube
+1) `mkdir .kube`
 
-2) export KUBECONFIG=.kube/eksconfig
+2) `export KUBECONFIG=.kube/eksconfig`
 
-4) terraform init -var-file="demo.tfvars"
+4) `terraform init -var-file="demo.tfvars"`
 
-5) terraform plan -var-file="demo.tfvars"
+5) `terraform plan -var-file="demo.tfvars"`
 
-6) terraform apply -var-file="demo.tfvars"
+6) `terraform apply -var-file="demo.tfvars"`
 
-7) terraform output kubeconfig > .kube/eksconfig
+7) `terraform output kubeconfig > .kube/eksconfig`
 
 
 ```
@@ -76,24 +76,20 @@ etcd-0               Healthy   {"health": "true"}
 
 Add workers nodes into the cluster.
 
-8) terraform output config_map_aws_auth > config_map_aws_auth.yml
+8) `terraform output config_map_aws_auth > config_map_aws_auth.yml`
 
-9) aws-vault exec stack42-phillip-admin -- kubectl apply -f  config_map_aws_auth.yml
+9) `aws-vault exec stack42-phillip-admin -- kubectl apply -f  config_map_aws_auth.yml`
 
 ```
 configmap/aws-auth created
 ```
 
-10) aws-vault exec stack42-phillip-admin -- kubectl get nodes
+10) `aws-vault exec stack42-phillip-admin -- kubectl get nodes`
 
 ```
 ip-10-0-0-244.us-west-2.compute.internal   Ready    <none>   54s   v1.10.3
 ip-10-0-1-53.us-west-2.compute.internal    Ready    <none>   53s   v1.10.3
 ```
-
-
-
-
 
 
 
