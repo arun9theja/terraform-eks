@@ -21,3 +21,7 @@ variable "cidr_block" {}
 variable "az_count" {}
 
 variable "region" {}
+
+variable "max_size" {}
+
+variable "min_size" {}
