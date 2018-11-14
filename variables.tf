@@ -12,12 +12,12 @@ variable "instance_type" {
   type    = "string"
 }
 
-variable "desired_capacity" {
-  default = 1
-}
+variable "desired_capacity" {}
 
 variable "cidr_block" {}
 
 variable "az_count" {}
 
 variable "region" {}
+
+variable "owners" {}
