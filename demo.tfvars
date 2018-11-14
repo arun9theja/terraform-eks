@@ -14,4 +14,4 @@ az_count = "2"
 
 cidr_block = "10.0.0.0/16"
 
-owners = "self" # 602401143452 is AWS or self
+owners = "602401143452" # 602401143452 is AWS or self
