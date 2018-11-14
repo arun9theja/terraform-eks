@@ -21,3 +21,9 @@ variable "az_count" {}
 variable "region" {}
 
 variable "owners" {}
+
+variable "max_size" {}
+
+
+variable "min_size" {}
+
