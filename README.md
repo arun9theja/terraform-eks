@@ -80,13 +80,13 @@ Add workers nodes into the cluster.
 
 8) `terraform output config_map_aws_auth > config_map_aws_auth.yml`
 
-9) `aws-vault exec stack42-phillip-admin -- kubectl apply -f  config_map_aws_auth.yml`
+9) `kubectl apply -f  config_map_aws_auth.yml`
 
 ```
 configmap/aws-auth created
 ```
 
-10) `aws-vault exec stack42-phillip-admin -- kubectl get nodes`
+10) `kubectl get nodes`
 
 Then you must see the nodes in Ready status.
 
