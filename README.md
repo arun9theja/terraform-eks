@@ -74,6 +74,7 @@ git clone git@github.com:p0bailey/terraform-eks.git
 
 6) `terraform output kubeconfig > .kube/eksconfig`
 
+7) `kubectl  get cs`
 
 ```
 NAME                 STATUS    MESSAGE              ERROR
