@@ -42,6 +42,7 @@ resource "aws_internet_gateway" "demo" {
 
 resource "aws_route_table" "demo" {
   vpc_id = "${aws_vpc.demo.id}"
+  count  = "${var.az_count}"
 
   route {
     cidr_block = "0.0.0.0/0"
@@ -52,5 +53,5 @@ resource "aws_route_table" "demo" {
 resource "aws_route_table_association" "public_route_table_association" {
   count          = "${var.az_count}"
   subnet_id      = "${element(aws_subnet.demo.*.id, count.index)}"
-  route_table_id = "${aws_route_table.demo.id}"
+  route_table_id = "${element(aws_route_table.demo.*.id, count.index)}"
 }

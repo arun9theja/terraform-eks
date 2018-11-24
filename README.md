@@ -66,11 +66,11 @@ git clone git@github.com:p0bailey/terraform-eks.git
 
 2) `export KUBECONFIG=.kube/eksconfig`
 
-3) `terraform init -var-file="demo.tfvars"`
+3) `terraform init
 
-4) `terraform plan -var-file="demo.tfvars"`
+4) `terraform plan
 
-5) `terraform apply -var-file="demo.tfvars"`
+5) `terraform apply
 
 6) `terraform output kubeconfig > .kube/eksconfig`
 
