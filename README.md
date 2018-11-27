@@ -115,7 +115,7 @@ Phillip Bailey– [@p0bailey](https://twitter.com/@p0bailey) – phillip.bailey@
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/p0bailey/kubernetes-the-awesome-way](https://github.com/p0bailey/terraform-eks)
+[https://github.com/p0bailey/terraform-eks](https://github.com/p0bailey/terraform-eks)
 
 ## Contributing
 
